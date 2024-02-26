@@ -681,7 +681,7 @@ a,a:hover,a:focus,a:visited{
 /* banner css start */
 .as_banner_wrapper{
     /* background-image: url(https://dummyimage.com/1920x1080); */
-    background-image: url(../images/3.png);
+    background-image: url(../images/3.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1069,7 +1069,7 @@ a,a:hover,a:focus,a:visited{
 /* service css end */
 /* why choose css start */
 .as_whychoose_wrapper{
-    background-image: url('../images/why-to.png');
+    background-image: url('../images/why-choose.png');
     /* background-image: url('https://dummyimage.com/1920x702'); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -1287,6 +1287,11 @@ a,a:hover,a:focus,a:visited{
 /* zodiec sign css start */
 .as_sign_box {
     background-color: #ececec;
+    /* background-image: -moz-linear-gradient( 0deg, #F1585A 0%, #B6247F 100%);
+    background-image: -webkit-linear-gradient( 0deg, #F1585A 0%, #B6247F 100%);
+    background-image: -ms-linear-gradient( 0deg, #F1585A 0%, #B6247F) 100%); */
+    
+    border-color: rgb(231, 231, 231);
     /* max-width: 170px; */
     padding: 80px 20px;
     border-radius: 10px;
@@ -1296,8 +1301,35 @@ a,a:hover,a:focus,a:visited{
     margin-top: 30px;
     transition: all 0.3s linear;
 }
+.as_sign_boxs {
+    /* background-color: #ececec; */
+    background-image: url('../images/trees.jpeg');
+    background-size: cover;
+    border-color: rgb(231, 231, 231);
+    padding: 210px 23px 20px 23px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: -2px 0px 28px 0px rgb(0 0 0 / 5%);
+    border: 1px solid rgb(231, 231, 231);
+    margin-top: 30px;
+    transition: all 0.3s linear;
+    /* opacity: 0.9; */
+}
+.as_sign_boxs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.1; /* Adjust opacity as needed */
+}
 .as_sign_box .as_sign {
-    background-color: #ffffff;
+    background-image: -moz-linear-gradient( 0deg, rgb(82,104,45) 0%, rgb(150,184,93) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(82,104,45) 0%, rgb(150,184,93) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(82,104,45) 0%, rgb(150,184,93) 100%);
+    border-color: rgb(231, 231, 231);
     box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.06);
     height: 150px;
     width: 150px;
@@ -1308,6 +1340,11 @@ a,a:hover,a:focus,a:visited{
     margin-bottom: 14px;
     border-radius: 100%;
     transition: all 0.3s linear;
+}
+ .as_sign:hover{
+    background-image: -moz-linear-gradient( 0deg, #ffffff 0%, #ffffff 100%);
+    background-image: -webkit-linear-gradient( 0deg, #ffffff 0%, #ffffff 100%);
+    background-image: -ms-linear-gradient( 0deg, #ffffff 0%, #ffffff 100%);
 }
 .as_sign_box:hover .as_sign img {
     transform: rotate(360deg);
@@ -1325,6 +1362,7 @@ a,a:hover,a:focus,a:visited{
     font-size: 19px;
     line-height: 24px;
     transition: none;
+    color: #000000;
 }
 .as_sign_box:hover h5,.as_sign_box:hover p{
     color: #ffffff;
@@ -1333,6 +1371,33 @@ a,a:hover,a:focus,a:visited{
     background-image: -moz-linear-gradient( 0deg, rgb(82,104,45) 0%, rgb(150,184,93) 100%);
     background-image: -webkit-linear-gradient( 0deg, rgb(82,104,45) 0%, rgb(150,184,93) 100%);
     background-image: -ms-linear-gradient( 0deg, rgb(82,104,45) 0%, rgb(150,184,93) 100%);
+    border-color: rgb(231, 231, 231);
+} 
+.as_sign_boxs:hover .as_sign img {
+    transform: rotate(360deg);
+}
+.as_sign_boxs h5 {
+    font-size: 40px;
+    font-weight: 900;
+    /* color: var(--dark-color1); */
+    color: #000;
+    margin: 0 0 2px;
+    transition: none;
+    transition: all 0.3s linear;
+}
+.as_sign_boxs p {
+    margin: 0;
+    font-size: 19px;
+    line-height: 24px;
+    transition: none;
+    color: #000000;
+}
+.as_sign_box:hover h5,.as_sign_boxs:hover p{
+    color: #ffffff;
+    z-index: 100;
+}
+.as_sign_boxs:hover {
+    /* opacity: 0.6; */
     border-color: rgb(231, 231, 231);
 } 
 
@@ -1478,7 +1543,8 @@ a,a:hover,a:focus,a:visited{
 /* blog css end */
 /* product css start */
 .as_product_wrapper{
-    background-image: url('https://dummyimage.com/1920x940');
+    /* background-image: url('https://dummyimage.com/1920x940'); */
+    background-image: url('../images/category-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -2067,6 +2133,9 @@ section.as_pricing_plan .row {
     outline:none;
 }
 .as_zodiac_sidebar .as_sign_box {
+    margin-bottom: 20px;
+}
+.as_zodiac_sidebar .as_sign_boxs {
     margin-bottom: 20px;
 }
 .as_zodiac_heading .as_sign {
@@ -3516,6 +3585,10 @@ form.d_block {
         margin: 40;
         margin: 30px auto 0 !important;
     }
+    .as_sign_boxs {
+        margin: 40;
+        margin: 30px auto 0 !important;
+    }
     .as_blog_img img{
         width: 100%;
     }
@@ -3697,6 +3770,9 @@ form.d_block {
         flex-direction: column;
     }
     .as_sign_box {
+        padding: 15px;
+    }
+    .as_sign_boxs {
         padding: 15px;
     }
     .as_info_detail ul {
